@@ -2,11 +2,11 @@
 
 Jenkins Deployment on AWS
 
-Prerequisites
+PREREQUISITES
 
 - Two instances on AWS, one for the Agent machine and one for the JenkinsHost machine.
 
-Steps
+STEPS
 
 - Log into the Agent machine via SSH and navigate to the folder that has been synchronized with rsync.
 
@@ -14,7 +14,7 @@ Steps
 
 - Make sure you are in the shared folder directory and then run the following command:
 
-ansible-playbook -v jenkins.yml -i inventory.txt
+    "ansible-playbook -v jenkins.yml -i inventory.txt"
 
 - Once the command has completed execution, access the Jenkins application by using the JenkinsHost machine's public IP and entering it into your web browser, followed by ":8080" for port access.
 
